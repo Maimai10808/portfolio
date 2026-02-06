@@ -123,3 +123,14 @@ export function useTypewriter(
     isFinished,
   };
 }
+
+export function useBlinkCursor(interval = 500) {
+  const [visible, setVisible] = useState(true);
+
+  useEffect(() => {
+    const id = window.setInterval(() => setVisible((v) => !v), interval);
+    return () => window.clearInterval(id);
+  }, [interval]);
+
+  return visible ? "|" : " ";
+}
