@@ -1,7 +1,22 @@
 import { Element } from "react-scroll";
 import man from "../assets/man.png";
+import { useTypewriter } from "../animation/useTypewriter";
+import { useBlinkCursor } from "../animation/useBlinkCursor";
 
 export default function Home() {
+  const { text } = useTypewriter(
+    ["Frontend Developer", "Web3 Builder", "Next.js + React", "DeFi Projects"],
+    {
+      typingSpeed: 55,
+      deletingSpeed: 30,
+      pauseBeforeDelete: 900,
+      pauseBeforeType: 250,
+      loop: true,
+    },
+  );
+
+  const cursor = useBlinkCursor(450);
+
   return (
     <Element name="home" className="min-h-screen bg-blue-700 flex ">
       {/* Left_Home */}
@@ -15,7 +30,9 @@ export default function Home() {
           >
             Maimai
           </div>
-          <div className="text-[1em]">WEB DEVELOPER</div>
+          <div className="text-[1em]">
+            {text} <span className="opacity-80">{cursor}</span>
+          </div>
         </div>
       </div>
 
