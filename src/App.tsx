@@ -1,4 +1,4 @@
-import Nav from "./components/layout/Nav";
+import Nav from "./components/Layout/Nav";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Home from "./pages/Home";
