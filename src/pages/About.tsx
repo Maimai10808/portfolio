@@ -1,10 +1,18 @@
+import Card from "@/components/Grid/Card";
 import { TimelineItem } from "@/components/Grid/TimelineItem";
 import { Element } from "react-scroll";
 
+import web from "@/assets/web.png";
+import web3 from "@/assets/web3.png";
+import safe from "@/assets/safe.png";
+
 export default function About() {
   return (
-    <Element name="about" className="min-h-screen bg-[#0b1220] flex">
-      <div className="left_about w-[50%] h-screen flex justify-center items-center">
+    <Element
+      name="about"
+      className="min-h-screen bg-[#0b1220] flex flex-col md:flex-row"
+    >
+      <div className="left_about w-full md:[50%] h-screen flex  justify-center items-center">
         <div className="px-10 py-10">
           <TimelineItem
             title="Personal Info"
@@ -44,7 +52,14 @@ export default function About() {
           </TimelineItem>
         </div>
       </div>
-      <div className="right_about w-[50%] h-screen flex justify-center items-center"></div>
+      <div
+        className="right_about w-full md:w-[50%] h-screen flex flex-col
+      gap-20 justify-center items-center"
+      >
+        <Card title="Frontend" image={web} />
+        <Card title="Web3" image={web3} />
+        <Card title="Security" image={safe} />
+      </div>
     </Element>
   );
 }
