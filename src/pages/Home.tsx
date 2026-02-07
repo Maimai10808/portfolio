@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <Element name="home" className="min-h-screen  flex flex-col md:flex-row  ">
       {/* Left_Home */}
-      <div className="w-full md:w-[50%] h-[50vh] md:h-screen flex justify-center items-center">
+      <div className="w-full md:w-1/2 h-[50vh] md:h-screen flex justify-center items-center">
         {/* Home_Details */}
         <div className="text-[2vmax] flex flex-col text-left">
           <div className="text-[0.8em] text-white">I'M</div>
@@ -52,7 +52,7 @@ export default function Home() {
       </div>
 
       {/* Right_Home */}
-      <div className="w-full md:w-[50%] h-[50vh] md:h-screen flex justify-center md:items-center items-end">
+      <div className="w-full md:w-1/2 h-[50vh] md:h-screen flex justify-center md:items-center items-end">
         <img src={man} alt="" className="w-[60%] drop-shadow-2xl" />
       </div>
     </Element>

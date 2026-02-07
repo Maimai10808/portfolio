@@ -5,11 +5,11 @@ import ContactForm from "./ContactForm";
 export default function Contact() {
   return (
     <Element name="contact" className="min-h-screen flex">
-      <div className="w-[50%] flex justify-center items-center">
-        <img src={con} alt="" className="w-[50%]" />
+      <div className="w-1/2 flex justify-center items-center">
+        <img src={con} alt="" className="w-1/2" />
       </div>
 
-      <div className="w-[50%] flex justify-center items-center">
+      <div className="w-1/2 flex justify-center items-center">
         <ContactForm />
       </div>
     </Element>

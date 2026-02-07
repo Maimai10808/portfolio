@@ -9,7 +9,7 @@ import safe from "@/assets/safe.png";
 export default function About() {
   return (
     <Element name="about" className="min-h-screen  flex flex-col md:flex-row">
-      <div className="left_about w-full md:[50%] h-screen flex  justify-center items-center">
+      <div className="left_about w-full md:w-1/2 h-screen flex  justify-center items-center">
         <div className="px-10 py-10">
           <TimelineItem
             title="Personal Info"
@@ -50,7 +50,7 @@ export default function About() {
         </div>
       </div>
       <div
-        className="right_about w-full md:w-[50%] h-screen flex flex-col
+        className="right_about w-full md:w-1/2 h-screen flex flex-col
       gap-20 justify-center items-center"
       >
         <Card title="Frontend" image={web} />
