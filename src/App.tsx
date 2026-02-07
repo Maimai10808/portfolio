@@ -8,10 +8,12 @@ function App() {
   return (
     <>
       <Nav />
-      <Home />
-      <About />
-      <Projects />
-      <Contact />
+      <div className="bg-[#0b1220]">
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
+      </div>
     </>
   );
 }

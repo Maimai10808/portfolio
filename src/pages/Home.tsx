@@ -20,15 +20,12 @@ export default function Home() {
   const cursor = useBlinkCursor(450);
 
   return (
-    <Element
-      name="home"
-      className="min-h-screen bg-blue-700 flex flex-col md:flex-row  "
-    >
+    <Element name="home" className="min-h-screen  flex flex-col md:flex-row  ">
       {/* Left_Home */}
       <div className="w-full md:w-[50%] h-[50vh] md:h-screen flex justify-center items-center">
         {/* Home_Details */}
         <div className="text-[2vmax] flex flex-col text-left">
-          <div className="text-[0.8em]">I'M</div>
+          <div className="text-[0.8em] text-white">I'M</div>
           <div
             className="text-[2.5em] font-semibold
       bg-linear-to-br from-blue-600  to-white bg-clip-text text-transparent"
@@ -36,7 +33,7 @@ export default function Home() {
             {userName}
           </div>
           <div className="inline-flex items-center">
-            <span className="inline-block min-w-[16ch] whitespace-pre">
+            <span className="inline-block min-w-[16ch] whitespace-pre text-white">
               {text || "\u00A0"}
               <span className="opacity-80">{cursor}</span>
             </span>

@@ -8,10 +8,7 @@ import safe from "@/assets/safe.png";
 
 export default function About() {
   return (
-    <Element
-      name="about"
-      className="min-h-screen bg-[#0b1220] flex flex-col md:flex-row"
-    >
+    <Element name="about" className="min-h-screen  flex flex-col md:flex-row">
       <div className="left_about w-full md:[50%] h-screen flex  justify-center items-center">
         <div className="px-10 py-10">
           <TimelineItem
