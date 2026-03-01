@@ -64,7 +64,7 @@ export default function ContactForm() {
         <label className="text-white/80 text-sm">Name</label>
         <input
           {...register("name")}
-          placeholder="Your name"
+          placeholder="    Your name"
           className="h-12 rounded-xl px-4 bg-white/5 text-white outline-none border border-white/10 focus:border-white/30"
         />
         {errors.name && (
@@ -76,7 +76,7 @@ export default function ContactForm() {
         <label className="text-white/80 text-sm">Email</label>
         <input
           {...register("email")}
-          placeholder="you@email.com"
+          placeholder="    your@email.com"
           className="h-12 rounded-xl px-4 bg-white/5 text-white outline-none border border-white/10 focus:border-white/30"
         />
         {errors.email && (
@@ -88,7 +88,7 @@ export default function ContactForm() {
         <label className="text-white/80 text-sm">Message</label>
         <textarea
           {...register("message")}
-          placeholder="Tell me what you want to build…"
+          placeholder="    Tell me what you want to build…"
           rows={6}
           className="min-h-40 rounded-xl px-4 py-3 bg-white/5 text-white outline-none border border-white/10 focus:border-white/30 resize-none"
         />
